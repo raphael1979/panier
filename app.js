@@ -31,3 +31,12 @@ panier.retire(croissant);
 
 console.log(panier.totalHT);
 console.log(panier.totalTTC); 
+
+chocolatine.prototype = new Produit();
+chocolatine.prototype.constructor=chocolatine;
+function chocolatine(nom, prix, frais){
+  this.frais =true;
+  this.ajoute = function(){
+    
+  };
+}
